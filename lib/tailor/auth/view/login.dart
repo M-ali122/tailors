@@ -9,11 +9,6 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
-
-
-
-
         automaticallyImplyLeading: false,
         title: const Text('Login'),
       ),
@@ -26,7 +21,7 @@ class LoginScreen extends StatelessWidget {
               onChanged: loginController.setUsername,
               decoration: const InputDecoration(
                   labelText: 'Username',
-                border: OutlineInputBorder()
+              //  border: OutlineInputBorder()
               ),
             ),
             const SizedBox(height: 16),

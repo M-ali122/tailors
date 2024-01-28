@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tailors/res/route.dart';
+import 'package:tailors/res/theme/darkTheme.dart';
+import 'package:tailors/res/theme/ligtTheme.dart';
 import 'package:tailors/splash/view/splashScreen.dart';
 
 void main() {
@@ -16,8 +18,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'App',
-      // theme: LightTheme.lightTheme,
-      // darkTheme: DarkTheme.darkTheme,
+      theme: LightTheme.lightTheme,
+      darkTheme: DarkTheme.darkTheme,
       // darkTheme: ThemeData.dark(),
       //
       // theme: DarkTheme.darkTheme,
