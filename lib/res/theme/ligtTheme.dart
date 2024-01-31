@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
 class LightTheme {
-  final Color mainColor = const Color(0xff30889C);
-  static MaterialColor get primary => const MaterialColor(0xff30889C, {
-    50: Color(0xff93e8fc),
-    100: Color(0xff74e1fa),
-    200: Color(0xff5dd3e7),
-    300: Color(0xff50cce1),
-    400: Color(0xff45bfd3),
-    500: Color(0xff30889C),
-    600: Color(0xff156979),
-    700: Color(0xff22616c),
-    800: Color(0xff1c555e),
-    900: Color(0xff12434b),
+  final Color mainColor = const Color(0xff3870c3);
+  static MaterialColor get primary => const MaterialColor(0xff3870c3, {
+    50: Color(0xff98b8ff),
+    100: Color(0xff85ade8),
+    200: Color(0xff89adea),
+    300: Color(0xff7ba1da),
+    400: Color(0xff5b8dcb),
+    500: Color(0xff4474bd),
+    600: Color(0xff4b7cc5),
+    700: Color(0xff3e6bad),
+    800: Color(0xff123d7c),
+    900: Color(0xff0b2449),
   });
 
   static ThemeData lightTheme = ThemeData(
       primarySwatch: primary,
       primaryColor: primary,
-      scaffoldBackgroundColor: const Color(0xff16171B),
+      scaffoldBackgroundColor:  Colors.white.withOpacity(0.9),
       appBarTheme: const AppBarTheme(
         backgroundColor: Color.fromRGBO(22, 23, 27, 1),
         elevation: 0,
@@ -31,15 +31,15 @@ class LightTheme {
       ),
       textTheme: const TextTheme(
           bodyText2: TextStyle(
-              color: Colors.white,
+              color: Colors.black,
               fontFamily: 'SF Pro Text',
               fontSize: 16,
-              fontWeight: FontWeight.w600),
+              fontWeight: FontWeight.w400),
           bodyText1: TextStyle(
-              color: Colors.white,
+              color: Colors.black,
               fontFamily: 'SF Pro Text',
               fontSize: 16,
-              fontWeight: FontWeight.w600)),
+              fontWeight: FontWeight.w400)),
       cardColor: const Color(0xff23262D),
       inputDecorationTheme: InputDecorationTheme(
         hintStyle: const TextStyle(
@@ -47,21 +47,20 @@ class LightTheme {
             fontSize: 12,
             fontWeight: FontWeight.w400
         ),
-        fillColor: const Color(0xff1B1D22),
+        fillColor: Colors.white.withOpacity(0.8),
         filled: true,
         border: UnderlineInputBorder(
           borderSide: const BorderSide(
             width: 1,
             color: Color.fromRGBO(25, 21, 28, 0.10),
           ),
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(7.0),
         ),
-        contentPadding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
         focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.transparent)
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(7.0),
           borderSide: const BorderSide(
             width: 1,
             color: Color.fromRGBO(25, 21, 28, 0.10),
