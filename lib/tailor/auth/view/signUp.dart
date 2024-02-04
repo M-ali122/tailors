@@ -42,7 +42,7 @@ static String route = 'SignupScreen';
                       child: TextField(
                         onChanged: loginController.setUsername,
                         decoration: InputDecoration(
-                            labelText: 'name',
+                            labelText: 'Name',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(7),
                             )
@@ -56,7 +56,7 @@ static String route = 'SignupScreen';
                       child: TextField(
                         onChanged: loginController.setUsername,
                         decoration: InputDecoration(
-                            labelText: 'Username',
+                            labelText: 'Email',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(7),
                             )
@@ -78,12 +78,21 @@ static String route = 'SignupScreen';
                         ),
                       ),
                     ),
-                    SizedBox(height: 5.h,),
-                    const Align(
-                        alignment: Alignment.topRight,
-                        child: Text('Forget Password')
-                    ),
                     const SizedBox(height: 16),
+                    SizedBox(
+                      height: 50.h,
+                      child: TextField(
+                        onChanged: loginController.setPassword,
+                        obscureText: true,
+                        decoration:  InputDecoration(
+                            labelText: 'Confirm Password',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(7),
+                            )
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
                     // Obx(() {
                     //   return ElevatedButton(
                     //     onPressed: loginController.isLoggingIn.value

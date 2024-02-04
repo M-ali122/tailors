@@ -19,8 +19,8 @@ class LightTheme {
       primarySwatch: primary,
       primaryColor: primary,
       scaffoldBackgroundColor:  Colors.white.withOpacity(0.9),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: Color.fromRGBO(22, 23, 27, 1),
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.white.withOpacity(0.9),
         elevation: 0,
         foregroundColor: Colors.white,
         titleTextStyle: TextStyle(
@@ -34,12 +34,13 @@ class LightTheme {
               color: Colors.black,
               fontFamily: 'SF Pro Text',
               fontSize: 16,
-              fontWeight: FontWeight.w400),
+              fontWeight: FontWeight.w500
+          ),
           bodyText1: TextStyle(
               color: Colors.black,
               fontFamily: 'SF Pro Text',
               fontSize: 16,
-              fontWeight: FontWeight.w400)),
+              fontWeight: FontWeight.w500)),
       cardColor: const Color(0xff23262D),
       inputDecorationTheme: InputDecorationTheme(
         hintStyle: const TextStyle(
@@ -74,7 +75,7 @@ class LightTheme {
       ),
       textButtonTheme: const TextButtonThemeData(
           style: ButtonStyle(
-            foregroundColor: MaterialStatePropertyAll(Color(0xff30889C)),
+            foregroundColor : MaterialStatePropertyAll(Color(0xff30889C)),
           )),
       checkboxTheme: CheckboxThemeData(
         shape: const RoundedRectangleBorder(

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:tailors/tailor/auth/view/signUp.dart';
 import 'package:tailors/widgets/button.dart';
+import '../../tailorNavbar/view/navbarView.dart';
 import '../controller/loginController.dart';
 
 class LoginScreen extends GetWidget<LoginController> {
@@ -84,7 +85,10 @@ class LoginScreen extends GetWidget<LoginController> {
                         height: 54.h,
                         child: AppButton(
                             title: 'Login',
-                          onTap: loginController.login,
+                          // onTap: loginController.login,
+                          onTap: (){
+                              Get.toNamed(ClientNavbar.route);
+                          },
                         ),
                       ),
                       SizedBox(height: 30.h,),
